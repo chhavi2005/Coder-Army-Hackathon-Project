@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+</header>
+
+<div class="navbar">
+    <input type="checkbox" class="menu-toggle" id="menu-toggle">
+    <label for="menu-toggle" class="menu-toggle-label">&#9776;</label> <!-- Hamburger Icon -->
+    
+    <!-- Navigation links -->
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<!-- Home Section -->
+<section class="home">
+    <div class="home-left">
+            <h2>Welcome to My Portfolio</h2>
+        <h1>Hi, I'm <span class="name">Chhavi Gajnani</span></h1>
+        <p class="sub-heading">BCA Student | Specialisation in Cloud Computing</p>
+        
+    </div>
+    <div class="home-right">
+        <img src="./profile.jpeg" alt="Profile Photo">
+    </div>
+</section>
+
+
+<!-- About Me Section -->
+<section id="about">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>BCA student specializing in Cloud Computing, with a strong interest in technology and problem-solving. Proficient in systems administration and basic networking concepts. Eager to learn and grow in the field, with a commitment to delivering effective solutions and a passion for continuous improvement. Strong communication skills and the ability to work collaboratively in team settings.</p>
+            <p>In my academic journey, I have gained hands-on experience with technologies like AWS, Terraform, and Linux. I am currently focusing on learning full-stack web development (MERN stack) and looking forward to exploring Blockchain technology. I am passionate about building projects that solve real-world problems and collaborating with other tech enthusiasts to create innovative solutions.</p>
+        </div>
+        <div class="about-images">
+            <img src="./about1.jpg" alt="Profile Image 1" class="about-img">
+            <img src="./about2.jpg" alt="Profile Image 2" class="about-img">
+        </div>
+    </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2 class="project-heading">My Projects</h2>
+
+    <!-- Project Cards -->
+    <div class="projects-container">
+        <!-- Project 1: Placement Portal -->
+        <div class="project-card">
+            <img src="./pbl5.jpeg" alt="Placement Portal">
+            <div class="content">
+                <h3>Placement Portal for Inurture</h3>
+                <p class="technology">Technologies: MERN, AWS Infrastructure Services & Terraform</p>
+                <p class="details">
+                    I am currently developing a Placement Portal for inurture to streamline student-recruiter interactions. The project utilizes AWS services such as EC2, RDS, VPC, and ELB for a scalable infrastructure. I am implementing Terraform for automated resource provisioning, ensuring efficient management. 
+                </p>
+            </div>
+        </div>
+
+        <!-- Project 2: Eye Controlled Virtual Mouse -->
+        <div class="project-card">
+            <img src="./pbl4.png" alt="Eye Controlled Virtual Mouse">
+            <div class="content">
+                <h3>Eye Controlled Virtual Mouse</h3>
+                <p class="technology">Technologies: Flask & Python Libraries</p>
+                <p class="details">
+                    The "Eye Controlled Virtual Mouse" is an innovative project designed to assist individuals with disabilities who are unable to use a traditional mouse. By leveraging the power of pyautogui, OpenCV, and MediaPipe, this project enables users to control mouse movements through eye tracking using a webcam.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="./zomato.png" alt="Eye Controlled Virtual Mouse">
+            <div class="content">
+                <h3>Zomato Clone</h3>
+                <p class="technology">Technologies: HTML & CSS</p>
+                <p class="details">
+                    This Zomato Clone is a simple restaurant finder web app built with HTML and CSS. It features a responsive design, including a navbar and restaurant cards. Users can easily search for restaurants with a search bar on the homepage. The project also includes hover effects to enhance user interaction. It showcases my front-end development skills and focuses on modern UI design.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="skills" id="skills"> 
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <!-- Cloud Computing -->
+        <div class="skill-card">
+            <img src="./cloud.webp" alt="Cloud Computing" class="skill-img">
+            <h3>Cloud Computing</h3>
+            <p>AWS (EC2, S3, RDS, etc), Terraform, Linux</p>
+        </div>
+        <!-- Programming Languages -->
+        <div class="skill-card">
+            <img src="./pro.jpg" alt="Programming Languages" class="skill-img">
+            <h3>Programming Languages</h3>
+            <p>C++, Python</p>
+        </div>
+        <!-- Core CS -->
+        <div class="skill-card">
+            <img src="./cs.jpg" alt="Core CS" class="skill-img">
+            <h3>Core CS</h3>
+            <p>DSA, DBMS, CN, OS</p>
+        </div>
+        <!-- Current Learning -->
+        <div class="skill-card">
+            <img src="./mern.jpg" alt="Current Learning" class="skill-img">
+            <h3>Current Learning</h3>
+            <p>Web Development (MERN Stack)</p>
+        </div>
+        <!-- Future Learning -->
+        <div class="skill-card">
+            <img src="./block.png" alt="Future Learning" class="skill-img">
+            <h3>Future Learning</h3>
+            <p>Blockchain (Smart Contracts, Decentralized Apps)</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Footer -->
+<section class="contact-form-footer" id="contact">
+    <div class="contact-container">
+        <h2>Contact Me</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+
+</body>
+</html>
